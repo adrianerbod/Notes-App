@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="author" content="adrianerbod">
+    <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0">
+    <title>Vanilla JS Notes App</title>
+    <link rel="stylesheet" href="style.css">
+    <!--boxIcons-->
+    <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
+    <!--!-boxIcons-->
+    <script defer src="script.js"></script>
+</head>
+<body>
+    <div class="logo">
+       <a href="https://dribbble.com/shots/14121188-A-or-B" target="_blank"><img src="logo.png" alt=""></a> <!--the inspiration-->
+    </div>
+    <div class="container">
+        <a href="https://github.com/adrianerbod?tab=repositories" class="git_link"><i class='bx bxl-github' ></i>&nbsp;GitHub</a>
+        <!--Input and page description-->
+        <div class="input_area">
+
+            <!--Ttile description and search-->
+            <div class="title_text">
+                <h1 class="page_title">Lorem ipsum dolor sit, amet consectetur adipisicing.</h1>
+                <p class="page_desc">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ad, totam pariatur! Provident corporis omnis quas rem voluptas? Voluptas temporibus a quasi vel quos voluptatibus, quam officiis, laborum sunt aspernatur minima?</p>
+                <form class="search_form">
+                    <input type="search" id="search-note" placeholder="Search Note By Title">
+                </form>
+            </div>
+            <!--!-Ttile description and search-->
+
+            <!--Create note-->
+            <div class="create_note">
+                <form class="create_form">
+                    <label for="title">Title <span class="sign">*</span></label>
+                    <input type="text" id="title" placeholder="Type Title">
+                    <label for="note-text" class="separate">Textarea <span class="sign">*</span></label>
+                    <textarea  id="note-text" rows="3" placeholder="Type Note Details"></textarea>
+                    <button type="button" id="create-btn">Save Note</button>
+                </form>
+            </div>
+            <!--!-Create note-->
+
+        </div>
+        <!--!-Input and page description-->
+
+        <!--Output local storage-->
+        <div class="output_area"></div>
+        <!--!-Output local storage-->
+    </div>
+</body>
+</html>
